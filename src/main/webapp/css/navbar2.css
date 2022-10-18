@@ -1,0 +1,172 @@
+/*Navigation bar 2*/
+nav.bar2{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+nav.bar2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0px;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+nav.bar2 li {
+    float: left;
+}
+
+nav.bar2 li.right{
+    float: right;
+}
+
+nav.bar2 li a {
+    display: block;
+    color: #B7B7B7;
+    text-align: center;
+    padding: 14px 16px 25px 16px;
+    text-decoration: none;
+    /*border-right: 1px solid black;*/
+}
+
+nav.bar2 li a:hover:not(.active2){
+    color: white;
+}
+
+nav.bar2 li a.active2{
+    color: white;
+}
+
+#searchBar{
+    width: 120%;
+    border-style: none;
+    border-width: 0;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/icon/searchicon.png');
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+    padding: 8px 8px 8px 40px;
+    margin: 5px 3px 3px 3px;
+    color: #333333;
+    font-weight: bold;
+}
+
+/*risulatati della ricerca, dopo la chiamata ajax*/
+.resultSearch{
+    width: 120%;
+    border-style: none;
+    border-width: 0;
+    font-size: 16px;
+    background-color: white;
+    color: #3E3E3E !important;
+    display: block;
+    z-index: 1;
+    cursor: pointer;
+    text-align: left !important;
+    margin-left: 3px;
+    padding: 10px 0px 10px 43px !important;
+}
+
+.resultSearch:hover{
+    background-color: #2388cc !important;
+    font-weight: bold;
+    color: white !important;
+}
+
+/*div che definisce un menu per dispositivi mobili*/
+#content_btn2{
+    display: none;
+}
+
+/*contenitore della navbar2 e del div per mobile*/
+div#sticky{
+    background-color: #333333;
+    position: sticky;
+    top:0;
+    position: -webkit-sticky;
+    z-index: 1;
+}
+
+
+/*punto di modifica del layout della navbar2*/
+@media screen and (max-width: 1150px){
+
+    /*il div con freccia in giù diventa visibile*/
+    #content_btn2{
+        display: block;
+        background-color: #3E3E3E;
+        height: 35px;
+    }
+
+    /*la navbar rimane nascosta, una funzione js la renderà visibile al click*/
+    nav.bar2{
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+
+    nav.bar2 ul {
+        padding-top: 0px;
+    }
+
+    nav.bar2 li {
+        clear: both;
+        width: 100%;
+    }
+
+    nav.bar2 li a{
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    nav.bar2 li.right{
+        float: left;
+    }
+
+
+    nav.bar2 ul li{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content_btn2 a{
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        display: block;
+        text-align: center;
+    }
+
+    input[type=text]{
+        margin: 0px;
+    }
+
+    #searchBar, .resultSearch{
+        padding-right: 0px;
+        width: 99%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/*necessario in caso la navbar2 rimane nascosta con layout modificato ( <= 1150px) e si torna ad uno schermo più grande*/
+@media screen and (min-width: 1151px){
+
+    nav.bar2{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1151px){
+
+    nav.bar2{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}

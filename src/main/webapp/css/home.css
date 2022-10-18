@@ -1,0 +1,146 @@
+/*Contenuto*/
+section.content {
+    margin-right: 214px;
+    margin-left: 214px;
+    display: block;
+}
+
+img#content{
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+div#pallini{
+    margin-top: 5px;
+    text-align: center;
+}
+
+input[type="radio"], input[type="radio"]:checked{
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: #d1d3d1;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked{
+    background-color: #2388cc;
+}
+
+p.titoli{
+    background-color: #3E3E3E;
+    padding: 5px;
+    font-size: 17px;
+    color:#B7B7B7;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.containerCopertine{
+    display: inline-block;
+    transition: transform .3s; /*permette di modificare i valori di una proprietà secondo una determinata durata*/
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #3E3E3E;
+    z-index: -1;
+}
+
+.copertine {
+    width: 200px;
+    height: 200px;
+}
+
+div.containerCopertine:hover {
+    transform: scale(1.1);
+    z-index: -1;
+    font-weight: bold;
+}
+
+.copertine:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+p.titoloGioco{
+    text-align: center;
+}
+
+div.centralCopertine {
+    text-align: center;
+}
+
+/*Tooltip*/
+.tool {
+    visibility: hidden;
+    width: 150px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-weight: lighter;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: -65%;       /*-65% dall'alto verso il basso*/
+    left: 50%;
+    margin-left: -75px; /*-75px da dx verso sx*/
+}
+
+form.tooltip:hover span.tool {
+    visibility: visible;
+}
+
+img.tooltip:hover + span.tool, input[type=image].tooltip:hover ~ span.tool{
+    visibility: visible;
+}
+
+img.tooltip:hover{
+    cursor: pointer;
+}
+
+form.tooltip:hover input[type=image], input[type=image].tooltip:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px){
+
+    section.content{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    input[type='radio'], input[type='radio']:checked{
+        height: 13px;
+        width: 13px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .copertine{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1151px){
+
+    section.content{
+        margin-right: 114px;
+        margin-left: 114px;
+    }
+}
+

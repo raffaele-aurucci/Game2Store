@@ -1,0 +1,96 @@
+section{
+    margin-left: 214px;
+    margin-right: 214px;
+}
+
+.column{
+    float: left;
+    width: 25%;
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+#expandedImg{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/*cancella i floats dopo le colonne*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.container {
+    position: relative;
+}
+
+b {
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#libreriaGioco {
+    background-color: #3E3E3E;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 15px;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1em;
+}
+
+@media screen and (max-width: 1150px){
+
+    #expandedImg{
+        height: auto;
+    }
+
+    section{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1151px){
+
+    section{
+        margin-right: 114px;
+        margin-left: 114px;
+    }
+}

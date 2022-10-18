@@ -1,0 +1,81 @@
+input[type=email], input[type=password], input[type=text], input[type=date], input[type=month], select, option{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #3E3E3E;
+    font-weight: normal;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: white;
+}
+
+section.container{
+    display: block;
+    border-radius: 5px;
+    background-color: #3E3E3E;
+    padding: 20px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+div.label{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+div.input{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/*Fa in modo che gli elementi siano messi uno sotto l'altro come le righe di una tabella e in colonna*/
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p.errorServlet, p#errori, b{
+    text-align: center;
+    color: orange;
+}
+
+a{
+    color: #B7B7B7;
+}
+
+a:hover{
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+
+    div.label, div.input{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    div.label{
+        text-align: center;
+    }
+
+    section.container{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    input[type=email], input[type=password], input[type=text], input[type=date], select, option{
+        text-align: center;
+    }
+}

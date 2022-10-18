@@ -1,0 +1,191 @@
+p{
+    font-size: 18px;
+}
+
+p#totale, p#vuoto{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+span{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+section {
+    margin-right: 214px;
+    margin-left: 214px;
+}
+
+table {
+    margin-top: 80px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #B7B7B7;
+}
+
+td {
+    color: #B7B7B7;
+}
+
+tr.trGiochi:hover {background-color: #2388cc;}
+
+img.copertina {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+}
+
+
+/*div contenitore sovrapposto*/
+.overlay {
+    height: 100%;
+    width: 0;   /*inizialmente width vale 0 dopodiché al click verrà portato a 100*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow: hidden;     /*nasconde gli elementi*/
+    transition: width 0.5s;
+}
+
+/*contenuto del div*/
+#overlay-content1 {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+#overlay-content2 {
+    position: relative;
+    width: 100%;
+    top: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.overlay a#closebtn:hover, #inserisci:hover {
+    color: white;
+}
+
+#closebtn {
+    position: absolute;
+    padding: 8px;
+    text-decoration: none;
+    color: #B7B7B7;
+    display: block;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#inserisci{
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: #b7b7b7;
+    font-size: 24px;
+    text-align: center;
+}
+
+table.carta{
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-radius: 1em;
+    width: 50%;
+    background-color: #3E3E3E;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+td.carta{
+    padding: 8px;
+    text-align: center;
+    color: #b7b7b7;
+    border-bottom: 0px;
+}
+
+img.icone{
+    width: 60%;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    section{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1151px){
+
+    section{
+        margin-right: 114px;
+        margin-left: 114px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    p, span{
+        font-size: 16px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    button{
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    button.rimuovi{
+        margin: 0;
+    }
+
+    p#totale, p#vuoto{
+        font-size: 18px;
+    }
+
+    img.copertina {
+        max-width: 100px;
+        max-height: 100px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    table.carta {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 25px;
+    }
+
+    #inserisci {
+        font-size: 16px;
+    }
+}

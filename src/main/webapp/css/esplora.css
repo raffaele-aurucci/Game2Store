@@ -1,0 +1,115 @@
+/*applico una transizione, in maniera tale che la transform venga eseguita in 0.3s*/
+.column{
+    display: inline-block;
+    background-color: #3E3E3E;
+    width: 20%;
+    transition: transform .3s;
+    margin: 8px;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.column input[type=image] {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+}
+
+.column input[type=image]:hover {
+    opacity: 1;
+}
+
+/*clearfix*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*applico il transform quando viene passato il mouse*/
+.column:hover {
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+section{
+    margin-left: 214px;
+    margin-right: 214px;
+    text-align: center;
+}
+
+.containerCopertine{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/*applico un animazione al div*/
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+/*animazione intermedia al div contenente le copertine, cambia il colore da from a to in 4s*/
+@keyframes fade {
+    from {background-color: #333333}    /*colore intermedio*/
+    to {background-color: #B7B7B7}      /*colore effettivo*/
+}
+
+div.centralCopertine{
+    margin-top: 40px;
+    background-color: #B7B7B7;  /*colore iniziale*/
+    display: none;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #B7B7B7;
+    color: white;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #2388cc;
+}
+
+@media screen and (max-width: 1150px){
+
+    section{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .column{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1151px){
+
+    section{
+        margin-right: 114px;
+        margin-left: 114px;
+    }
+}
