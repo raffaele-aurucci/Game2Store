@@ -1,4 +1,4 @@
-# Game2Store
+# Game2Store :video_game:
 An e-commerce of digital video games created on occassion of the Web Software Technologies exam.
 
 A preview of ```Home Page```
