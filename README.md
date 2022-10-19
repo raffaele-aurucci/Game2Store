@@ -1,5 +1,5 @@
-# Game2Store :video_game:
-An e-commerce of digital video games created on occassion of the Web Software Technologies exam.
+# Game2Store
+An e-commerce of digital videogames :video_game: created on occassion of the Web Software Technologies exam.
 
 A preview of ```Home Page```
 
@@ -21,4 +21,4 @@ The technologies used:
 
 In **documents** folder can find a template that defines the various functionalities of the web application, including the database schema.
 
-Special thanks to @AngeloPalmieri with whom I worked on the project!
+Special thanks to @AngeloPalmieri with whom I worked on the project! 
