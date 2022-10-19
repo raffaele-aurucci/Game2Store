@@ -16,7 +16,7 @@ public class ConnectionDB {
             PoolProperties p = new PoolProperties();
             p.setUrl("jdbc:mysql://localhost:3306/Game2Store?serverTimezone=" + TimeZone.getDefault().getID());
             p.setDriverClassName("com.mysql.cj.jdbc.Driver");
-            p.setUsername("root");
+            p.setUsername("root");  //sostituire con il proprio username utilizzato durante l'installazione di MySQL
             p.setPassword("root");  //sostituire con la propria password utilizzata durante l'installazione di MySQL
             p.setMaxActive(100);
             p.setInitialSize(10);
