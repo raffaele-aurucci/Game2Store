@@ -9,8 +9,7 @@ A preview of ```Home Page```
 ![image](https://user-images.githubusercontent.com/114738583/196824696-994f1a5e-afdc-4290-b5ab-9c18f4f79c4b.png)
 
 
-
-The technologies used:
+The technologies used with **MVC pattern**:
 * ```Java``` with framework ```Jakarta``` for back-end
 * ```JavaScript``` and ```JQuery``` for front-end
 * ```JavaServer Pages``` 
