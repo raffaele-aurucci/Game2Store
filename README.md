@@ -1,5 +1,5 @@
 # Game2Store
-An e-commerce of digital videogames :video_game: created on occassion of the Web Software Technologies exam.
+An e-commerce of digital videogames :video_game: realized on occassion of the Web Software Technologies exam.
 
 ## Demo
 A preview of the Home Page:
